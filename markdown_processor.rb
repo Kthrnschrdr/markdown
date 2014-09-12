@@ -6,6 +6,7 @@ module MarkdownProcessor
       return "<h1> + #{some string} + </h1>"
     else
       return false
+    end
   end
   
 end
