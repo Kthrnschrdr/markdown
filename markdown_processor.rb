@@ -1,9 +1,9 @@
 module MarkdownProcessor
   
-  def convert_to_h1("some string")
-    if "some string".start_with?('#')
-      somestring = "some string".sub(/[#]/, "")
-      return "<h1> + #{some string} + </h1>"
+  def self.convert_to_h1(some_string)
+    if some_string.start_with?('#')
+      somestring = some_string.sub(/[#]/, "")
+      return "<h1>#{somestring}</h1>"
     else
       return false
     end
